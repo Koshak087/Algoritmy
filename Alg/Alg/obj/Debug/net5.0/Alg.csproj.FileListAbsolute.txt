@@ -1,0 +1,16 @@
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\bin\Debug\net5.0\Alg.exe
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\bin\Debug\net5.0\Alg.deps.json
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\bin\Debug\net5.0\Alg.runtimeconfig.json
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\bin\Debug\net5.0\Alg.runtimeconfig.dev.json
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\bin\Debug\net5.0\Alg.dll
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\bin\Debug\net5.0\ref\Alg.dll
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\bin\Debug\net5.0\Alg.pdb
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.csproj.AssemblyReference.cache
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.AssemblyInfoInputs.cache
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.AssemblyInfo.cs
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.csproj.CoreCompileInputs.cache
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.dll
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\ref\Alg.dll
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.pdb
+E:\C#\study\algoritmy\Algoritmy\Alg\Alg\obj\Debug\net5.0\Alg.genruntimeconfig.cache
