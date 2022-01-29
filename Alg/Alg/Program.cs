@@ -2,7 +2,7 @@
 
 namespace Alg
 {
-    class Program
+    /*class Program
     {
         static void Main(string[] args)
         {
@@ -10,28 +10,19 @@ namespace Alg
             int n = Int32.Parse(Console.ReadLine());
             
         }
-    }
+    }*/
     public class Hw1_1
     {
 
         static void Main(string[] args)
         {
+            Console.Write("Введите число:");
             int N = Int32.Parse(Console.ReadLine());
-            getNumber(N);
-            if (N == 1)
-            {
-                Console.WriteLine($"{N} простое число");
-            }
-            else Console.WriteLine($"{N} не протое число");
-        }
-        public static int getNumber(int a)
-        {
-
             int d = 0;
             int i = 2;
-            if (i < a)
+            if (i < N)
             {
-                if (a % i == 0)
+                if (N % i == 0)
                 {
                     d++;
                     i++;
@@ -43,23 +34,24 @@ namespace Alg
             {
                 if (d == 0)
                 {
-                    int b = 1;
-                    return b;
+                    
+                    Console.WriteLine($"{N} простое число");
                 }
 
                 else
                 {
-                    int b = 0;
-                    return b;
+                    Console.WriteLine($"{N} не протое число");
                 }
             }
-
-
+            {
+                
+            }
+            Console.ReadLine();
         }
-
+       
     }
 
-    public class Hw1_3
+    /*public class Hw1_3
     {
         static void Main (string[] args)
         {
@@ -122,5 +114,5 @@ namespace Alg
             return result;
         }
 
-    }
+    }*/
 }
