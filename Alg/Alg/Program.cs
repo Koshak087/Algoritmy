@@ -2,7 +2,7 @@
 
 namespace Alg
 {
-    /*class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -10,7 +10,7 @@ namespace Alg
             int n = Int32.Parse(Console.ReadLine());
             
         }
-    }*/
+    }
     public class Hw1_1
     {
 
@@ -51,7 +51,7 @@ namespace Alg
        
     }
 
-    /*public class Hw1_3
+    public class Hw1_3
     {
         static void Main (string[] args)
         {
@@ -114,5 +114,5 @@ namespace Alg
             return result;
         }
 
-    }*/
+    }
 }
