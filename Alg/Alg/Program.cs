@@ -13,8 +13,10 @@ namespace Alg
                 case "1_1":
                     Console.Write("Введите число: ");
                     int j = int.Parse(Console.ReadLine());
-                    Hw1_1;
+                    Hw1_1 j = new Hw1_1();
+                    break;
             }
         }
-   
+
+    }
 }
