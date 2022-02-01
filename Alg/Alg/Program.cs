@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace Alg
 {
@@ -6,16 +10,23 @@ namespace Alg
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите число номер задания (для задания 1 первого урока исп 1_1 и т.д.: ");
-            string n = Console.ReadLine();
-            switch (n)
+            string n;
+            do
             {
-                case "1_1":
-                    Console.Write("Введите число: ");
-                    int j = int.Parse(Console.ReadLine());
-                    Hw1_1 j = new Hw1_1();
-                    break;
+                Console.Write("Введите число номер задания (для задания 1 первого урока исп 1_1 и т.д., для выхода введите 'exit'): ");
+                n = Console.ReadLine();
+                switch (n)
+                {
+                    case "1_1":
+                        Hw1_1.Number(null);
+                        continue;
+                    case "1_3":
+                        Hw1_3.Fib(null);
+                        continue;
+                }
             }
+            while (n == "exit");
+            
         }
 
     }

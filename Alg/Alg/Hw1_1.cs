@@ -9,10 +9,11 @@ namespace Alg
 {
     class Hw1_1
     {
-        public int Numb ;
-        static void Main(string[] args)
+        
+        public static void Number(string[] args)
         {
-            
+            Console.Write("Введите число: ");
+            int N = Int32.Parse(Console.ReadLine());
             int d = 0;
             int i = 2;
             if (i < N)
