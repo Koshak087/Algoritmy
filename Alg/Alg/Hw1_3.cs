@@ -8,7 +8,7 @@ namespace Alg
 {
     class Hw1_3
     {
-        static void Main(string[] args)
+        public static void Fib(string[] args)
         {
             Console.Write("Выберете метод рекурсия(1) или метод(2): ");
             int N = Int32.Parse(Console.ReadLine());
