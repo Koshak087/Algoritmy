@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NPOI.SS.Formula.Functions;
+using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace Alg
                         Hw1_3.Fib(null);
                         break;
                     case "2_1":
-                        Hw2_1.Node<T>.(null);
+                        Hw2_1.Node<T>.Print();
                         break;
                         
                 }
