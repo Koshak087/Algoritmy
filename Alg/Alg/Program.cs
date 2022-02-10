@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NPOI.SS.Formula.Functions;
+using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +20,16 @@ namespace Alg
                 {
                     case "1_1":
                         Hw1_1.Number(null);
-                        continue;
+                        break;
                     case "1_3":
                         Hw1_3.Fib(null);
-                        continue;
+                        break;
+                    case "2_1":
+                        Hw2_1.Node<T>.Print();
+                        break;
+                    case "2_2":
+                        Hw2_2.search();
+                        break;
                 }
             }
             while (n == "exit");
