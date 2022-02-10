@@ -27,7 +27,9 @@ namespace Alg
                     case "2_1":
                         Hw2_1.Node<T>.Print();
                         break;
-                        
+                    case "2_2":
+                        Hw2_2.search();
+                        break;
                 }
             }
             while (n == "exit");

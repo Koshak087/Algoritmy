@@ -31,19 +31,19 @@ namespace Alg
         }
         public void Insert(int index, T value)
         {
-            Node<T> node = head;
+            Node<T> currentNode = head;
             int i = 0;
-            if (index > count || index < 0)
+            if (index > count-1 || index < 0)
                 Console.WriteLine("Некорректное значение индекса.");
             else
             {
                 do
                 {
-                    node = node.NextNode;
+                    currentNode = currentNode.NextNode;
                     i++;
                 }
-                while (i < index);
-                node.NextNode = Add(value);
+                while (i < index-1);
+                currentNode.NextNode.Value = value;
                 count++;
             }
                
@@ -126,6 +126,7 @@ namespace Alg
                         return true;
                     current = current.NextNode;
                 }
+            Console.WriteLine($"{current.NextNode}\t");
                 return false;
             }
         public void PrintList()

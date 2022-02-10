@@ -37,7 +37,7 @@ namespace Alg
                 Console.WriteLine("Введите ваше чило:");
                 int uVal = Int32.Parse(Console.ReadLine());
                 myList.Insert(ind, uVal);
-
+                myList.PrintList();
 
             }
         }
