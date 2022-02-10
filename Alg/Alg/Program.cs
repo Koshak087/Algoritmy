@@ -19,10 +19,14 @@ namespace Alg
                 {
                     case "1_1":
                         Hw1_1.Number(null);
-                        continue;
+                        break;
                     case "1_3":
                         Hw1_3.Fib(null);
-                        continue;
+                        break;
+                    case "2_1":
+                        Hw2_1.Node<T>.(null);
+                        break;
+                        
                 }
             }
             while (n == "exit");
