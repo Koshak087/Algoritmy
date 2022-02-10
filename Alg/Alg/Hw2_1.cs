@@ -14,11 +14,10 @@ namespace Alg
             public Node<T> NextNode { get; set; }
             public Node<T> PrevNode { get; set; }
             public Node(T value)
-            public Node<T> Insert
             {
-                Value = value;
-                
+                Value = value;   
             }
+
             public static void Print()
             {
                 ILinkedList<int> myList = new ILinkedList<int>();
@@ -29,7 +28,9 @@ namespace Alg
                 myList.PrintList();
                 Console.WriteLine("\t");
                 myList.Remove(20);
+                myList.AddFirst(150);
                 myList.PrintList();
+                Console.Write("Колличество элементов в списке: ");
                 myList.GetCount();
                 Console.WriteLine("Введите индекс эеменета, после которого необоходимо вставить ваше число:");
                 int ind = Int32.Parse(Console.ReadLine());

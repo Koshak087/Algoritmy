@@ -31,12 +31,19 @@ namespace Alg
         }
         public void Insert(int index, T value)
         {
-            Node<T> node = new Node<T>(value);
+            Node<T> node = head;
+            int i = 0;
             if (index > count || index < 0)
                 Console.WriteLine("Некорректное значение индекса.");
             else
             {
-                (index, value);
+                do
+                {
+                    node = node.NextNode;
+                    i++;
+                }
+                while (i < index);
+                node.NextNode = Add(value);
                 count++;
             }
                
