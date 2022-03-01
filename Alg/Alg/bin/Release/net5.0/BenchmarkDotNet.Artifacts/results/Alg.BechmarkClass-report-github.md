@@ -11,6 +11,8 @@ AMD Ryzen 5 5600X, 1 CPU, 12 logical and 6 physical cores
 | Method | Mean | Error |
 |------- |-----:|------:|
 |   Rand |   NA |    NA |
+|  Rand2 |   NA |    NA |
 
 Benchmarks with issues:
   BechmarkClass.Rand: DefaultJob
+  BechmarkClass.Rand2: DefaultJob

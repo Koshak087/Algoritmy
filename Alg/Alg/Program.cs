@@ -33,9 +33,9 @@ namespace Alg
                     case "3_1":
                         Hw3_1.Result(null);
                         break;
-                    /*case "3_2":
-                        Hw3_2.;
-                        break;*/
+                    case "3_2":
+                        Hw3_2.Result(null);
+                        break;
                 }
             }
             while (n == "exit");
