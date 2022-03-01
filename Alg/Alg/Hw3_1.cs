@@ -21,7 +21,7 @@ namespace Alg
     }
 
     public class BechmarkClass
-    {
+    { 
         [Benchmark]
         public void Rand()
         {
@@ -39,21 +39,24 @@ namespace Alg
                 double y;
                 if (n == 0)
                 {
-                    x = 0;
+                    x = array[n];
+                    y = 0;
+                    get = Bench(ref x, ref y);
+                    //Console.WriteLine($"{get}");
+                }
+                else
+                {
+                    x = array[n - 1];
                     y = array[n];
                     get = Bench(ref x, ref y);
-                    Console.WriteLine($"{get}");
+                    //Console.WriteLine($"{get}");
                 }
-                x = array[n - 1];
-                y = array[n];
-                get = Bench(ref x, ref y);
-                Console.WriteLine($"{get}");
             }
         }
         [Benchmark]
         public void Rand2()
         {
-            double[] array = new double[200000];
+            double[] array = new double[100000];
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
             {
@@ -67,15 +70,18 @@ namespace Alg
                 double y;
                 if (n == 0)
                 {
-                    x = 0;
+                    x = array[n];
+                    y = 0;
+                    get = Bench(ref x, ref y);
+                    //Console.WriteLine($"{get}");
+                }
+                else
+                {
+                    x = array[n - 1];
                     y = array[n];
                     get = Bench(ref x, ref y);
-                    Console.WriteLine($"{get}");
+                    //Console.WriteLine($"{get}");
                 }
-                x = array[n - 1];
-                y = array[n];
-                get = Bench(ref x, ref y);
-                Console.WriteLine($"{get}");
             }
         }
         public double Bench(ref double X, ref double Y)
