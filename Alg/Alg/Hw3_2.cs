@@ -18,23 +18,23 @@ namespace Alg
 
         public void Rand()
         {
-            double[] array = new double[100000];
+            object[] array = new object[100000];
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = rand.Next();
                 //Console.WriteLine(array[i]);
             }
-            double get;
+            object get;
             for (int n = 0; n < array.Length; n++)
             {
-                double x;
-                double y;
+                object x;
+                object y;
                 if (n == 0)
                 {
                     x = array[n];
                     y = 0;
-                    get = Bench(ref x, ref y);
+                    get = Bench(x, y);
                     //Console.WriteLine($"{get}");
 
                 }
@@ -42,7 +42,7 @@ namespace Alg
                 {
                     x = array[n - 1];
                     y = array[n];
-                    get = Bench(ref x, ref y);
+                    get = Bench(x, y);
                     //Console.WriteLine($"{get}");
 
                 }
@@ -53,38 +53,40 @@ namespace Alg
         [Benchmark]
         public void Rand2()
         {
-            double[] array = new double[100000];
+            object[] array = new object[100000];
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = rand.Next();
                 //Console.WriteLine(array[i]);
             }
-            double get;
+            object get;
             for (int n = 0; n < array.Length; n++)
             {
-                double x;
-                double y;
+                object x;
+                object y;
                 if (n == 0)
                 {
                     x = array[n];
                     y = 0;
-                    get = Bench(ref x, ref y);
+                    get = Bench(x, y);
                     //Console.WriteLine($"{get}");
                 }
                 else
                 {
                     x = array[n - 1];
                     y = array[n];
-                    get = Bench(ref x, ref y);
+                    get = Bench(x, y);
                     //Console.WriteLine($"{get}");
 
                 }
             }
         }
-        public double Bench(ref double X, ref double Y)
+        public object Bench( object X, object Y)
         {
-            double n = Y / X;
+            double x = Convert.ToDouble(X);
+            double y = Convert.ToDouble(Y);
+            double n = y / x;
             return n;
         }
 

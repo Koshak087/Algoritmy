@@ -6,21 +6,31 @@ using System.Threading.Tasks;
 
 namespace Alg
 {
-    interface LessonAlg
+    internal interface LessonAlg
     {
-        public string LessonID { get; }
+        string LessonID { get; }
 
-        public string Description { get; set; }
+        string Description { get; set; }
 
+        void Demo();
     }
     internal class Lesson1 : LessonAlg
     {
         public string LessonID { get => "1"; }
+
         public string Description { get => "ДЗ 1. Определение \"простоты\" числа"; }
+        string LessonAlg.Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void Demo()
+        {
+            Console.WriteLine("Начало задания 1");
+            DoSomeThing();
+            Console.WriteLine("Конец задания 1");
+        }
 
         private void DoSomeThing()
         {
-
+            Console.WriteLine("Здесь основная логика ДЗ");
         }
     }
 }
