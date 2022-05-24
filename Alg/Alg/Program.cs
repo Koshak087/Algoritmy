@@ -30,6 +30,12 @@ namespace Alg
                     case "2_2":
                         Hw2_2.search();
                         break;
+                    case "3_1":
+                        Hw3_1.Result(null);
+                        break;
+                    case "3_2":
+                        Hw3_2.Result(null);
+                        break;
                 }
             }
             while (n == "exit");

@@ -44,9 +44,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "BenchmarkDotNet": {
+              "target": "Package",
+              "version": "[0.13.1, )"
+            },
             "NPOI": {
               "target": "Package",
               "version": "[2.5.5, )"
+            },
+            "StopWatch": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "System.Runtime.Extensions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
